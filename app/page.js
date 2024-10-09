@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Home() {
-  const weekDemos = [2, 3];
+  const weekDemos = [2, 3, 4];
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
