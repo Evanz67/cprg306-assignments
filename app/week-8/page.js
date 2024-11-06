@@ -18,7 +18,7 @@ export default function Page() {
     const newText = name.replace(/[^\x00-\x7F]/g, '');
     const newText2 = newText.split(",")[0];
     setSelectedItemName(newText2);
-    console.log(selectedItemName);
+    
   }
 
   return (

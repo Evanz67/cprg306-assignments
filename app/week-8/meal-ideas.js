@@ -23,8 +23,11 @@ export function MealIdeas({ingredient}) {
     }
 
     useEffect(() => {
-        loadMealIdeas();
-    }, [])
+        if (ingredient) {
+            loadMealIdeas();
+        }
+        
+    }, [ingredient]);
 
     return (
         <div className="bg-purple-700 pb-4 my-2 border-2 rounded border-purple-900">
