@@ -8,7 +8,7 @@ import item from "./items.json";
 
 export default function Page() {
   const [items, setItems] = useState(item);
-  const [selectedItemName, setSelectedItemName] = useState('bread');
+  const [selectedItemName, setSelectedItemName] = useState('a');
 
   function HandleAddItem(newItem) {
     setItems((oldItem) => [...oldItem, newItem]);

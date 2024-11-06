@@ -28,17 +28,25 @@ export function MealIdeas({ingredient}) {
         }
         
     }, [ingredient]);
+    console.log(meals);
+
+    if (meals === null) {
+        return (
+            <div className="bg-purple-700 pb-4 my-2 border-2 rounded border-purple-900">
+            <h1 className="text-2xl font-bold">Meal Ideas</h1>
+            <p>Click an items to see meal ideas</p>
+            </div>
+        )
+    }
 
     return (
         <div className="bg-purple-700 pb-4 my-2 border-2 rounded border-purple-900">
             <h1 className="text-2xl font-bold">Meal Ideas</h1>
-
             {meals.map((meal) => (
                 <li key={meal.idMeal}>
                     {meal.strMeal}
                 </li>
             ))}
-
         </div>
     )
 }

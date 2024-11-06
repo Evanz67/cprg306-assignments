@@ -49,7 +49,7 @@ export function ItemList({items, onItemSelect}) {
             {
               items.sort((a, b) => (a.category < b.category ? -1 : 1)).map((items) => (
                 <li key={items.id}>
-                  <Item name={items.name} quantity={items.quantity} category={items.category}/> 
+                  <Item name={items.name} quantity={items.quantity} category={items.category} onSelect={onItemSelect} /> 
                 </li>               
               ))
             }
