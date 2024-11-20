@@ -35,7 +35,7 @@ export function Shopping({user}) {
 
   useEffect(() => {
     loadItems();
-  }, []);
+  }, [user]);
 
   return (
     <main className="bg-purple-900">
